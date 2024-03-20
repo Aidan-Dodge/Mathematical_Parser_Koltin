@@ -6,8 +6,8 @@ class SampleTest {
 
     @Test
     fun testParse(){
-        val expected = ArrayDeque(listOf('3','4','2','*','1','5','-','2','3','^','^','/','+'))
-        val expected2 = ArrayDeque(listOf('3','4','2','1','-','*','+'))
+        val expected = ArrayDeque(listOf("3","4","2","*","1","5","-","2","3","^","^","/","+"))
+        val expected2 = ArrayDeque(listOf("3","4","2","1","-","*","+"))
         //testing shunting-Yard Algorithm
         assertEquals(expected, testPolynomials.shuntingYard("3+4*2/(1-5)^2^3"))
         assertEquals(expected2, testPolynomials.shuntingYard("3+4*(2-1)"))
