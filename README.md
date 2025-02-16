@@ -1,1 +1,1 @@
-# CS141EC
+# Kotlin Mathematical Parser and Simplifier
